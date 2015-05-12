@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+    <Displayer   name="CSSListMenu"
+                 type="net.sf.navigator.displayer.CSSListMenuDisplayer"/>
+    
+  </Displayers>
+    <Menus>
+         <Menu name="Login" title="Login" page="/pages/login.jsp" roles="admin,user"/>
+        <Menu name="MaintainSchedule" title="Maintain Schedule" description="Admin Menu" roles="stmanager" width="120" >
+            <Item name="CreateSchedule" title="Create Schedule" page="/controller/loadCreateSchedule"/>
+            <Item name="ModifySchedule" title="Modify Schedule" page="/controller/loadModifySchedule"/>
+            <Item name="CopySchedule" title="Copy Schedule" page="/controller/loadCopySchedule"/>
+            <Item name="viewSchedule" title="View Schedule" page="/controller/loadViewSchedule"/>
+            <Item name="deleteSchedule" title="Delete Schedule" page="/controller/loadDeleteSchedule"/>
+        </Menu>
+        <Menu name="MaintainUser" title="Maintain User" description="Admin Menu" roles="stmanager" width="120" >
+            <Item name="CreateUser" title="Create User" page="/controller/loadCreateUser"/>
+            <Item name="ModifyUser" title="Modify User" page="/controller/loadmodifyUser"/>
+            <Item name="deleteUser" title="Delete User" page="/controller/loadDeleteUser"/>
+        </Menu>
+        <Menu name="Logout" title="Logout" page="/controller/logout" roles="admin,user"/>
+    </Menus>
+</MenuConfig>

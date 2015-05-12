@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="homePage" template="/pages/layout/classic.jsp">
+		<put-attribute name="header" value="/pages/layout/header.jsp" />
+		<put-attribute name="menu" value="/pages/layout/menu.jsp" />
+		<put-attribute name="body" value="/pages/layout/body.jsp" />
+		<put-attribute name="footer" value="/pages/layout/footer.jsp" />
+	</definition>
+	<definition name="loginPage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/login.jsp" />
+	</definition>
+	<definition name="errorPage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/error.jsp" />
+	</definition>
+	<definition name="searchrpPage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/searchrp.jsp" />
+	</definition>
+	<definition name="crudrpPage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/crudrp.jsp" />
+	</definition>
+	<definition name="setuprpPage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/setuprp.jsp" />
+	</definition>
+        
+        <definition name="createPage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/createUser.jsp" />
+	</definition>
+        <definition name="deletePage" extends="homePage">
+		<put-attribute name="body" value="/pages/tilepages/deleteUser.jsp" />
+	</definition>
+        <definition name="createSchedulePage" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/createSchedule.jsp" />
+        </definition>
+        <definition name="modifyPage" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/modifyUser.jsp" />
+        </definition>
+        
+       <definition name="modifiedUserDetails" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/modifiedUserDetails.jsp" />
+        </definition>
+       <definition name="modifiedUserDetails" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/modifiedUserDetails.jsp" />
+        </definition>
+         <definition name="copySchedulePage" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/copySchedule.jsp" />
+        </definition>  
+
+        <definition name="deleteSchedulePage" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/deleteSchedule.jsp" />
+        </definition>
+         <definition name="modfiySchedulePage" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/modifySchedule.jsp" />
+        </definition>
+        <definition name="viewSchedulePage" extends="homePage">
+                <put-attribute name="body" value="/pages/tilepages/reviewSelectScheduledProgram.jsp" />
+        </definition>
+        
+</tiles-definitions>
